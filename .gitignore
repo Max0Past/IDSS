@@ -2,3 +2,4 @@ __pycache__/
 .serena
 .code-workspace
 .idea/
+*data/
