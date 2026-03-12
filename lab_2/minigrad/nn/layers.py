@@ -19,9 +19,9 @@ class Linear(Module):
     """
 
     def __init__(self, in_features: int, out_features: int) -> None:
-        limit = np.sqrt(6.0 / (in_features + out_features))
+        # Initializing with a normal distribution with zero mean and small variance
         self.weight = Tensor(
-            np.random.uniform(-limit, limit, (out_features, in_features)),
+            np.random.normal(0, 0.01, (out_features, in_features)),
             requires_grad=True,
         )
         self.bias = Tensor(
