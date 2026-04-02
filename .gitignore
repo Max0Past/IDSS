@@ -3,3 +3,4 @@ __pycache__/
 .code-workspace
 .idea/
 *data/
+CLAUDE.md
